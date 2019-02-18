@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+
+<resources>
+
+    <string-array name="spray_type">
+        <item>Insect</item>
+        <item>Fungus</item>
+        <item>Illness</item>
+        <item>Fertilizer</item>
+    </string-array>
+
+</resources>
