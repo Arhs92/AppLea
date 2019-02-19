@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="activity">
+
+        <item>Dilution</item>
+        <item>Irrigation</item>
+        <item>Fertilization</item>
+        <item>Pruning</item>
+        <item>Tillage</item>
+        <item>Harvesting</item>
+        <item>Harvesting Second Hand</item>
+        <item>Harvesting Third Hand</item>
+        <item>Harvesting Fourth Hand</item>
+        <item>Spraying</item>
+        <item>Barlery Farmer-Destroyer</item>
+        <item>Buy Filtizer</item>
+        <item>Buy Atomizer</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,113 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.commontask.NewPostActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/snippet_info" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/first"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relLayout1"
+            android:textStyle="bold|normal"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Gathering Information"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/first_ans"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/first"
+            android:textStyle="normal"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="AppLea was designed so that everyone can use a password and e-mail to access the application.
+Users are asked to provide personal information only when a post is registered. AppLea collects two types of data:\na) data that a user enters when signing in the app.
+\nb) data a user enters when adding a post through the app."/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/second"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/first_ans"
+            android:textStyle="bold|normal"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Correcting,Modifying or Deleting Information"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/second_ans"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/second"
+            android:textStyle="normal"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="AppLea allows users to modify, add or delete data and information submitted to the application.\nFor of security, when a user wants to delete information, a procedure is followed to delete this information from file directly."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/third"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/second_ans"
+            android:textStyle="bold|normal"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Changes"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:id="@+id/third_ans"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/third"
+            android:textStyle="normal"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="The terms of use may change as new updates of the AppLea application become available and its services are enhanced.In all cases, the user will be alerted about such changes."/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

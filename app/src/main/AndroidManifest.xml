@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.commontask">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.example.commontasker.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required by Calendar Provider -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".YourLocalWeather"
+        android:theme="@style/AppThemeLight"
+        tools:ignore="AllowBackup">
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/SplashTheme1">
+            <meta-data
+                android:name="com.google.android.backup.api_key"
+                android:value="AEdPqrEAAAAImD2xzM1mjVqrMOV7G1_ccLkNvpmbu8KPJ5XeJg" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".opengl.OpenglesActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".opengl.NewStoryActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".materialcamera.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".materialcamera.CaptureActivity2" android:screenOrientation="portrait"/>
+
+        <activity android:name=".UseConditions" />
+        <activity android:name=".FaqActivity" />
+        <activity android:name=".WorkActivity" />
+        <activity android:name=".PolicyActivity" />
+        <activity android:name=".WhatIsIt" />
+        <activity android:name=".WhatIS" />
+        <activity android:name=".TaskUpdate" />
+        <activity android:name=".view.activities.MainActivity" />
+        <activity android:name=".NewPostActivity1" />
+        <activity android:name=".NewPostActivity2" />
+        <activity android:name=".NewPostActivity3" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".CardViewActivity" />
+        <activity android:name=".SettingsPrefActivity" />
+        <activity android:name=".MapUpdate" />
+        <activity android:name=".MainActivity4" />
+        <activity android:name=".MainActivity5" />
+        <activity android:name=".MainActivity6" />
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".ui.DailyForecastActivity"
+            android:label="@string/title_activity_daily_forecast"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.commontask.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.HourlyForecastActivity"
+            android:label="@string/title_activity_hourly_forecast"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.commontask.ui.MainActivity" />
+        </activity>
+        <activity android:name=".Likes.LikesActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Profile.ProfileActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Search.SearchActivity"
+            tools:ignore="InnerclassSeparator"/>
+        <activity android:name=".Share.ShareActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Profile.AccountSettingsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Share.NextActivity"
+            tools:ignore="InnerclassSeparator" />
+
+
+        <activity android:name=".Home.HomeActivity"
+            tools:ignore="InnerclassSeparator" />
+
+
+        <activity android:name=".HistoryActivity"/>
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".Splash" />
+        <activity android:name=".fragment.PostListFragment"/>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FilterTask" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:label="Δημιουργία Συνομιλίας"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.ChatMessagesActivity"
+            android:label="(Συνομιλία)"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".ui.GeneralListActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.FriendsListActivity"
+            android:label="Βρείτε Φίλους"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.ChatListActivity"
+            android:label="Οι συζητήσεις σας"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".NewPostActivity" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".Proregistry" />
+
+        <activity android:name=".MainWeatherAppActivity"
+            android:launchMode="singleTask" />
+
+        <activity android:name=".activities.MainActivity"/>
+
+        <activity
+            android:name=".WeatherSettingsActivity"
+            android:label="@string/nav_menu_settings"
+            android:parentActivityName=".MainWeatherAppActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainWeatherAppActivity"/>
+        </activity>
+
+        <activity
+            android:name=".WelcomeSetting"
+            android:label="@string/nav_menu_settings"
+            android:parentActivityName=".Proregistry"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Proregistry"/>
+        </activity>
+
+
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".LocationsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.commontask.action.ADDRESS_RESOLUTION_RESULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LocationsActivity"/>
+        </activity>
+        <activity
+            android:name=".LocationsActivity"
+            android:label="@string/title_activity_locations"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainWeatherAppActivity"/>
+        </activity>
+        <activity
+            android:name=".WeatherForecastActivity"
+            android:label="@string/label_activity_weather_forecast"
+            android:parentActivityName=".MainWeatherAppActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainWeatherAppActivity"/>
+        </activity>
+        <activity
+            android:name=".GraphsActivity"
+            android:label="@string/label_activity_graphs"
+            android:parentActivityName=".MainWeatherAppActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainWeatherAppActivity"/>
+        </activity>
+        <activity
+            android:name=".LicenseActivity"
+            android:exported="false"
+            tools:ignore="GoogleAppIndexingUrlError">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:pathPrefix="/android_asset/licenses/"
+                    android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.commontask.help.HelpActivity"
+            android:label="@string/label_activity_help"
+            android:parentActivityName=".MainWeatherAppActivity" >
+        </activity>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".widgets.ExtensiveWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/extensive_widget" />
+        </receiver>
+        <receiver android:name=".widgets.TimeWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget" />
+        </receiver>
+        <receiver android:name=".widgets.SimpleWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget" />
+        </receiver>
+
+
+
+        <receiver android:name=".receiver.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".widget.LessWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.example.commontask.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+                <action android:name="com.example.commontask.action.WEATHER_UPDATE_RESULT"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_LOCATION"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_less"/>
+        </receiver>
+
+        <receiver android:name=".widget.MoreWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.example.commontask.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+                <action android:name="com.example.commontask.action.WEATHER_UPDATE_RESULT"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_LOCATION"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_more"/>
+        </receiver>
+
+        <receiver android:name=".widget.ExtLocationWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.example.commontask.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+                <action android:name="com.example.commontask.action.WEATHER_UPDATE_RESULT"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_LOCATION"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_ext_loc"/>
+        </receiver>
+
+
+        <receiver android:name=".widget.ExtLocationWithForecastWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.example.commontask.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_GRAPH_SCALE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_LOCATION"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_SETTINGS"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_START_ACTIVITY"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_ext_loc_graph"/>
+        </receiver>
+
+        <receiver android:name=".widget.WeatherGraphWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.example.commontask.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_GRAPH_SCALE"/>
+                <action android:name="com.example.commontask.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_LOCATION"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_CHANGE_SETTINGS"/>
+                <action android:name="com.example.commontask.action.ACTION_APPWIDGET_START_ACTIVITY"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_weather_graph"/>
+
+
+        </receiver>
+
+
+        <service
+            android:name=".service.CurrentWeatherResendJob"
+            android:label="Current weather retry job"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name=".service.WeatherForecastResendJob"
+            android:label="Weather forecast retry job"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <service
+            android:name=".service.LocationUpdateServiceRetryJob"
+            android:label="Location update retry job"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name=".service.NetworkLocationCellsOnlyJob"
+            android:label="Cells only scanning job"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name=".service.StartAutoLocationJob"
+            android:label="Start auto location update"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name=".service.ReconciliationDbService" />
+        <service
+            android:name=".service.NotificationService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.intent.action.START_WEATHER_NOTIFICATION_UPDATE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".widget.WidgetRefreshIconService" />
+        <service
+            android:name=".service.AppWakeUpManager" />
+        <service
+            android:name=".service.CurrentWeatherService" />
+        <service
+            android:name=".service.ForecastWeatherService" />
+        <service android:name=".service.AppAlarmService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.example.commontask.action.START_ALARM_SERVICE" />
+                <action android:name="com.example.commontask.action.START_LOCATION_WEATHER_ALARM_AUTO" />
+                <action android:name="com.example.commontask.action.START_LOCATION_WEATHER_ALARM_REGULAR" />
+                <action android:name="com.example.commontask.action.RESTART_ALARM_SERVICE" />
+                <action android:name="com.example.commontask.action.RESTART_NOTIFICATION_ALARM_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.SensorLocationUpdateService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.intent.action.START_SENSOR_BASED_UPDATES" />
+                <action android:name="android.intent.action.STOP_SENSOR_BASED_UPDATES" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.ScreenOnOffUpdateService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.intent.action.START_SCREEN_BASED_UPDATES" />
+                <action android:name="android.intent.action.STOP_SCREEN_BASED_UPDATES" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.LocationUpdateService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.intent.action.START_LOCATION_AND_WEATHER_UPDATE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.commontask.service.NetworkLocationProvider"
+            android:permission="android.permission.ACCESS_COARSE_LOCATION" >
+            <intent-filter>
+                <action android:name="org.openbmap.unifiedNlp.LOCATION_UPDATE_CELLS_ONLY" />
+            </intent-filter>
+        </service>
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIH9QJjwFxkDeNI-61QWyiL_scDW5LVWc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".widgets.DashClockWeatherExtension"
+            android:icon="@drawable/ic_cloud_white_24dp"
+            android:label="@string/app_name"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2" />
+            <meta-data
+                android:name="worldReadable"
+                android:value="true" />
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".ExampleSettingsActivity" />
+        </service>
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.example.commontask.WidgetSettingsDialogue"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            >
+        </activity>
+
+
+        <activity
+            android:name=".activities.MapActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoStatusBar" />
+        <activity
+            android:name=".activities.GraphActivity"
+            android:label="@string/action_graphs"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivityCalendar" />
+        <activity
+            android:name=".EditActivity"
+            android:windowSoftInputMode="adjustResize"> </activity>
+        <activity android:name=".MainActivityPdf" />
+        <activity
+            android:name="com.gun0912.tedpicker.ImagePickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_picker" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <receiver android:name=".weather.WeatherSyncAlarmReceiver" />
+
+        <service android:name=".weather.WeatherSyncService" />
+
+        <activity android:name=".BaseDrawerActivity" />
+        <activity android:name=".BaseActivityProfile" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.swati4star.shareFile"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths">
+
+            </meta-data>
+        </provider>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+
+        <activity android:name=".MainPhoneAuthActivity" />
+        <activity android:name=".VerifyPhoneActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Sharing Options">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/sharing_about" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Dilution Posts" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Irrigation Posts" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Fertilization Posts" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Pruning Posts"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Tillage Posts" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Harvesting Posts" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Spraying Posts" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="Post Barlery Farmer-Destroyer Posts" />
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

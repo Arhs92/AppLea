@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shopping_item">
+        <item>Apple</item>
+        <item>Walnut</item>
+        <item>Orange</item>
+        <item>Peanut</item>
+        <item>Almond</item>
+        <item>Vineyard</item>
+    </string-array>
+</resources>
