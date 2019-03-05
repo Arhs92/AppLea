@@ -76,10 +76,10 @@
             android:layout_below="@+id/view4"
             android:layout_marginStart="30dp"
             android:layout_marginTop="25dp"
-            android:hint="Kind"
+            android:text="@string/kind"
             android:textSize="18dp"
             android:textColor="@color/black"
-            android:textStyle="normal|italic"
+            android:textStyle="normal"
             android:layout_marginLeft="30dp" />
 
         <Spinner
@@ -138,14 +138,14 @@
             android:layout_marginTop="30dp"
             android:layout_alignStart="@+id/txtxoraf1i"
             android:layout_below="@+id/txtkind"
-            android:hint="Chemical info"
+            android:hint="Chemical content"
             android:textStyle="normal|italic"
             android:layout_alignLeft="@+id/txtxoraf1i" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Quantity"
+            android:hint="Ferltizer Quantity"
             android:textSize="18dp"
             android:id="@+id/count"
             android:textStyle="normal|italic"
@@ -269,7 +269,7 @@
             android:layout_below="@+id/view10"
             android:layout_marginStart="30dp"
             android:layout_marginTop="59dp"
-            android:text="Time"
+            android:text="@string/time"
             android:textSize="18dp"
             android:textStyle="normal|italic"
             android:layout_marginLeft="30dp" />

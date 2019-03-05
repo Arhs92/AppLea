@@ -12,7 +12,6 @@
 
     <com.example.commontask.widget.EventCalendarView
         android:id="@+id/calendar_view"
-        android:visibility="gone"
         tools:visibility="visible"
         android:elevation="@dimen/default_elevation"
         android:background="?android:attr/colorBackground"

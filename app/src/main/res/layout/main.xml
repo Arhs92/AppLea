@@ -197,8 +197,7 @@
             android:layout_height="45dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="false"
-            android:fontFamily="sans-serif-light"
-            android:src="@drawable/rsz_check" />
+            android:fontFamily="sans-serif-light"/>
 
         <TextView
             android:id="@+id/tab2_text"

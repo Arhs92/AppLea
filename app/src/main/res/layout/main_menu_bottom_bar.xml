@@ -63,7 +63,7 @@ android:layout_alignParentBottom="true">
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="false"
             android:fontFamily="sans-serif-light"
-            android:src="@drawable/rsz_check" />
+          />
 
         <TextView
             android:id="@+id/tab2_text"

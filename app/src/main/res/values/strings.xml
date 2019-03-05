@@ -651,7 +651,7 @@
     <string name="history_bottom">History</string>
     <string name="C">Weather</string>
     <string name="profile_bottom">Profile</string>
-    <string name="personal_info">Personal Informations</string>
+    <string name="personal_info">Personal Information</string>
     <string name="header_general">General</string>
     <string name="header_advanced">Advance</string>
     <string name="general">General</string>
@@ -1214,5 +1214,7 @@ General Settings</string>
     <string name="notification_permanent" tools:ignore="MissingTranslation">Permanent</string>
     <string name="notification_on_lock_screen" tools:ignore="MissingTranslation">On lock screen</string>
     <string name="notification_visual_style_custom_with_forecast" tools:ignore="MissingTranslation">Custom with a forecast</string>
+    <string name="time">Start time</string>
+    <string name="kind">Cultivation</string>
 </resources>
 

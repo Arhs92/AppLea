@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.obsez.android.lib.filechooser:filechooser:1.1.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-1.1.5.aar/8cdc65c972a632dd4c59bcf82367397c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-1.1.5.aar/8cdc65c972a632dd4c59bcf82367397c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-1.1.5.aar/286c8256271ec3c50f2268fa308b0b3c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-1.1.5.aar/286c8256271ec3c50f2268fa308b0b3c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

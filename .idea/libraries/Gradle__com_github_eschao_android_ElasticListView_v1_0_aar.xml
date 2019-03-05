@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.eschao:android-ElasticListView:v1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-ElasticListView-v1.0.aar/dbc12ceda0a8d2dca885d0799b5feb2b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-ElasticListView-v1.0.aar/dbc12ceda0a8d2dca885d0799b5feb2b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-ElasticListView-v1.0.aar/51a1b41ee339875adc0428a4a6599b86/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-ElasticListView-v1.0.aar/51a1b41ee339875adc0428a4a6599b86/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

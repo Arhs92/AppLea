@@ -75,7 +75,7 @@
             android:layout_below="@+id/view4"
             android:layout_marginStart="30dp"
             android:layout_marginTop="25dp"
-            android:hint="Kind"
+            android:text="@string/kind"
             android:textSize="18dp"
             android:textColor="@color/black"
             android:textStyle="normal|italic" />
@@ -317,7 +317,7 @@
             android:layout_below="@+id/view10"
             android:layout_marginStart="30dp"
             android:layout_marginTop="59dp"
-            android:text="Time"
+            android:text="@string/time"
             android:textSize="18dp"
             android:textStyle="normal|italic" />
 

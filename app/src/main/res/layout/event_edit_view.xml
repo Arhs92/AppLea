@@ -152,6 +152,7 @@
         android:layout_alignRight="@id/column2"
         android:layout_alignEnd="@id/column2"
         android:layout_width="wrap_content"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         tools:ignore="RtlHardcoded" />
 
@@ -166,6 +167,7 @@
         android:layout_alignRight="@id/column3"
         android:layout_alignEnd="@id/column3"
         android:layout_width="wrap_content"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         tools:ignore="RtlHardcoded" />
 
